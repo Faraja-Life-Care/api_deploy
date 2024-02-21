@@ -1,20 +1,41 @@
 const Sequelize = require("sequelize");
 
-const connexion = new Sequelize("flc_db", "root", "", {
-  host: "127.0.0.1",
-  port: 3306,
-  dialect: "mysql",
-  operatorsAliases: false,
-  define: {
-    underscored: false,
-  },
-  pool: {
-    max: 5,
-    min: 0,
-    acquire: 3000,
-    idle: 1000,
-  },
-});
+// const connexion = new Sequelize("flc_db", "root", "", {
+//   host: "127.0.0.1",
+//   port: 3306,
+//   dialect: "mysql",
+//   operatorsAliases: false,
+//   define: {
+//     underscored: false,
+//   },
+//   pool: {
+//     max: 5,
+//     min: 0,
+//     acquire: 3000,
+//     idle: 1000,
+//   },
+// });
+
+const connexion = new Sequelize(
+  "bggpcorlvw9zq5ptlzp0",
+  "uzds5fhwbmmvyew8",
+  "XCSae1evkntxkniS6BzO",
+  {
+    host: "bggpcorlvw9zq5ptlzp0-mysql.services.clever-cloud.com",
+    port: 3306,
+    dialect: "mysql",
+    operatorsAliases: false,
+    define: {
+      underscored: false,
+    },
+    pool: {
+      max: 5,
+      min: 0,
+      acquire: 3000,
+      idle: 1000,
+    },
+  }
+);
 
 let database = {};
 database.connexion = connexion;
