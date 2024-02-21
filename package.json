@@ -1,0 +1,21 @@
+{
+  "name": "flc_api",
+  "version": "1.0.0",
+  "description": "API for Faraja Life Care project",
+  "main": "app",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "FLC",
+    "API"
+  ],
+  "author": "#Applicatoryx",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mysql2": "^3.9.1",
+    "sequelize": "^6.37.0"
+  }
+}
